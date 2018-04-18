@@ -1,6 +1,4 @@
-require_relative '../Models/item'
-require_relative '../Models/good'
-require_relative '../Models/exempt'
+require './spec_helper'
 describe Item do 
 	context 'good is not imported music cd' do 
 		let(:good){Good.new('music cd',10)}

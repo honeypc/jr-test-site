@@ -1,5 +1,4 @@
-require '../Models/exempt'
-
+require './spec_helper'
 describe Exempt do 
 	context 'not imported exempt good' do 
 		let(:exempt) {Exempt.new('book',12.49)}

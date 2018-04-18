@@ -1,8 +1,4 @@
-require_relative '../Models/item'
-require_relative '../Models/good'
-require_relative '../Models/exempt'
-require_relative '../Models/cart'
-require_relative '../Models/seller'
+require './spec_helper'
 describe Seller do 
 	context 'Input 1' do
 		let(:seller){Seller.new}

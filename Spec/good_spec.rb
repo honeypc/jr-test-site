@@ -1,4 +1,4 @@
-require '../Models/good'
+require './spec_helper'
 describe Good do 
 	context "not import good" do
 		let(:good) { Good.new('music cd', 14.49) }
