@@ -18,6 +18,6 @@
 	end
 
 	def total_tax
-		(set_import_duty_tax+set_basic_sale_tax).round(2)
+		set_import_duty_tax+set_basic_sale_tax
 	end
 end

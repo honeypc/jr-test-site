@@ -7,7 +7,7 @@ describe Good do
 			it do
 				expect(good.product).to eq 'music cd' 
 			end
-			it"" do
+			it do
 				expect(good.price).to eq 14.49
 			end
 		end

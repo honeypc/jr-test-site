@@ -4,17 +4,13 @@ class Item
 	def initialize(good, quantity)
 		@good=good
 		@quantity=quantity
-
 	end
 	def price_with_quantity
-		@quantity*@good.price*(1+@good.total_tax)
-	end
+		(tax_with_quantity+good.price).round(2)
+	end 
 	def tax_with_quantity
-		@quantity*@good.price*@good.total_tax
+		(@quantity*@good.price*@good.total_tax*20).ceil.to_f/20
 	end
 end
 
-# good=Good.new('book',10.0)
-# item=Item.new(good,1)
-# puts item.price_with_quantity
-# puts item.tax_with_quantity
+
